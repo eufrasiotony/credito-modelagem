@@ -14,6 +14,7 @@ Construir e avaliar modelos preditivos
 Gerar métricas para suporte à decisão de crédito
 
 🗂 Estrutura do Projeto
+
 ├── data/
 │   ├── raw/
 │   │   └── dados_emprestimos.csv        # Dados fictícios criados
@@ -23,10 +24,9 @@ Gerar métricas para suporte à decisão de crédito
 │
 ├── src/
 │   ├── data_generation.py               # Criação da base fictícia
-│   ├── woe + regressão.py                       # Análise exploratória + WOE
-│   ├── modeling.py                     # Modelo + geração do .pkl
-│   
-│   
+│   ├── woe_regressao.py              # Análise exploratória + WOE + regressão
+│   ├── modeling.py                      # Modelo + geração do .pkl
+│   └── __init__.py
 │
 ├── models/
 │   └── modelo_final.pkl                 # Modelo treinado
@@ -34,8 +34,8 @@ Gerar métricas para suporte à decisão de crédito
 ├── metrics/
 │   └── ks.py                            # Cálculo do KS
 │
-│
 └── README.md
+
 
 📊 Base de Dados
 
