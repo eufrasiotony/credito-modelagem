@@ -14,25 +14,14 @@ Construir e avaliar modelos preditivos
 Gerar métricas para suporte à decisão de crédito
 
 🗂 Estrutura do Projeto
-├── data/
-│   ├── raw/
-│   │   └── dados_emprestimos.csv
-│   ├── processed/
-│   │   └── resultado_score.csv
-│
-├── src/
-│   ├── cria_dados.py
-│   ├── woe_regressao.py
-│   ├── modelo.py
-│   ├── scoragem.py
-│   └── ks.py
-│
-│
-├── models/
-│   └── credit_model.pkl
-│
-└── README.md
 
+```text
+
+├── base.geral.csv/                 # Bases históricas utilizadas
+├── historico.jogos/                # Scripts de coleta e tratamento de dados
+├── modelo-logistico-gols0+.py/     # Modelo estatístico para ter pelo menos 1 gol
+├── modelo-logistico-gols1+.py/     # Modelo estatístico para mais de 1 gol
+└── README.md
 
 📊 Base de Dados
 
