@@ -22,9 +22,9 @@ Gerar métricas para suporte à decisão de crédito
 │   │   └── resultado_score.csv
 │
 ├── src/
-│   ├── cria-dados.py    # criação dos dados fícticios 
-│   ├── woe_regressao.py    # analise explanatória
-│   ├── modelo.py    # criação do modelo                 
+│   ├── cria_dados.py            # Criacao dos dados ficticios
+│   ├── woe_regressao.py         # Analise exploratoria + WOE
+│   ├── modelo.py                # Treinamento e salvamento do modelo
 │   └── __init__.py
 │
 ├── models/
@@ -34,6 +34,7 @@ Gerar métricas para suporte à decisão de crédito
 │   └── ks.py
 │
 └── README.md
+
 
 📊 Base de Dados
 
