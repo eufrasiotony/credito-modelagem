@@ -34,8 +34,6 @@ Gerar métricas para suporte à decisão de crédito
 └── README.md
 
 
-
-
 📊 Base de Dados
 
 A base de dados contém informações demográficas, financeiras e comportamentais dos clientes, como:
