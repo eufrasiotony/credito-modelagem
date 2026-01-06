@@ -14,26 +14,25 @@ Construir e avaliar modelos preditivos
 Gerar métricas para suporte à decisão de crédito
 
 🗂 Estrutura do Projeto
-
 ├── data/
 │   ├── raw/
-│   │   └── dados_emprestimos.csv        # Bases fictícias utilizadas
-│   │
+│   │   └── dados_emprestimos.csv
 │   ├── processed/
-│   │   └── resultado_score.csv          # Bases scoradas
+│   │   └── resultado_score.csv
 │
 ├── src/
-│   ├── cria_dados.py                    # Criação de bases fictícias
-│   ├── woe_regressao.py                 # Análise exploratória + WOE
-│   ├── modelo.py                       # Modelo definitivo + credit_model.pkl
-│   ├── scoragem.py                     # Processo de scoragem
-│   ├── ks.py                           # Cálculo do KS
+│   ├── cria_dados.py
+│   ├── woe_regressao.py
+│   ├── modelo.py
+│   ├── scoragem.py
+│   ├── ks.py
 │   └── __init__.py
 │
 ├── models/
 │   └── credit_model.pkl
 │
 └── README.md
+
 
 
 
