@@ -15,14 +15,24 @@ Gerar métricas para suporte à decisão de crédito
 
 🗂 Estrutura do Projeto
 
-
-├── cria_dados.py/                 # Criação de bases fictícias 
-├── dados_emprestimos.csv/                 # Bases Fictícias utilizadas
-├── resultado_score.csv/                # Bases Scoradas
-├── woe_regressao.py/     # analise explanatória
-├── modelo.py/     # criação do modelo definitivo + credit_model_pkl
-├── scoragem.py/     # criação do processo de scoragem
-├── KS.py/     # Calculo do KS
+├── data/
+│   ├── raw/
+│   │   └── dados_emprestimos.csv        # Bases fictícias utilizadas
+│   │
+│   ├── processed/
+│   │   └── resultado_score.csv          # Bases scoradas
+│
+├── src/
+│   ├── cria_dados.py                    # Criação de bases fictícias
+│   ├── woe_regressao.py                 # Análise exploratória + WOE
+│   ├── modelo.py                       # Modelo definitivo + credit_model.pkl
+│   ├── scoragem.py                     # Processo de scoragem
+│   ├── ks.py                           # Cálculo do KS
+│   └── __init__.py
+│
+├── models/
+│   └── credit_model.pkl
+│
 └── README.md
 
 
