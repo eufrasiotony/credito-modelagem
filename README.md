@@ -17,32 +17,29 @@ Gerar métricas para suporte à decisão de crédito
 
 ├── data/
 │   ├── raw/
-│   │   └── dados_emprestimos.csv        # Dados fictícios criados
-│   │
+│   │   └── dados_emprestimos.csv
 │   ├── processed/
-│   │   └── resultado_score.csv          # Dados com score aplicado
+│   │   └── resultado_score.csv
 │
 ├── src/
-│   ├── data_generation.py               # Criação da base fictícia
-│   ├── woe_regressao.py              # Análise exploratória + WOE + regressão
-│   ├── modeling.py                      # Modelo + geração do .pkl
+│   ├── cria-dados.py    # criação dos dados fícticios 
+│   ├── woe_regressao.py    # analise explanatória
+│   ├── modelo.py    # criação do modelo                 
 │   └── __init__.py
 │
 ├── models/
-│   └── modelo_final.pkl                 # Modelo treinado
+│   └── credit_model.pkl
 │
 ├── metrics/
-│   └── ks.py                            # Cálculo do KS
+│   └── ks.py
 │
 └── README.md
-
 
 📊 Base de Dados
 
 A base de dados contém informações demográficas, financeiras e comportamentais dos clientes, como:
 
-idade,sexo,estado_civil,escolaridade,qtde_dependentes,renda_mensal,valor_emprestimo,tempo_emprego,regiao,atraso_30d,atraso_60d,atraso_90d, variável dependente (pago)
-
+Idade, sexo, estado_civil, escolaridade, qtde_dependentes, renda_mensal, valor_emprestimo, tempo_emprego, regiao e  variável dependente (pago)
 
 ⚠️ Observação: Os dados utilizados são fictícios ou anonimizados, respeitando a LGPD.
 
