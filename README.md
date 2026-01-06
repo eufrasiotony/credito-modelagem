@@ -25,8 +25,8 @@ Gerar métricas para suporte à decisão de crédito
 │   ├── woe_regressao.py
 │   ├── modelo.py
 │   ├── scoragem.py
-│   ├── ks.py
-│   └── __init__.py
+│   └── ks.py
+│
 │
 ├── models/
 │   └── credit_model.pkl
