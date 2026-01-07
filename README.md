@@ -79,7 +79,15 @@ Precisão, Recall e F1-score
 
 Matriz de confusão
 
-## 📈 Resultados
+## ✅ Resultados Esperados
+
+Um modelo bem-sucedido apresenta:
+
+* AUC ≥ 0.80
+* KS ≥ 0.40
+* PSI < 0.10
+* Variáveis com IV relevante
+* Relações monotônicas estáveis
 
 O modelo final apresentou:
 
