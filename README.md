@@ -93,7 +93,7 @@ Os resultados indicam que o modelo não é adequado para apoiar decisões de cr�
 
 🛠 Tecnologias Utilizadas
 
-scorecardpy
+Scorecardpy
 
 Pandas
 

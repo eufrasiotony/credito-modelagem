@@ -115,39 +115,3 @@ print("\nInformation Value (IV):")
 print(iv)
 
 
-# -----------------------------------------------------
-# 12. CRIAR 10 GRUPOS DE SCORE (DECIS)
-# -----------------------------------------------------
-
-# Aplicar WOE na base completa
-df_woe = sc.woebin_ply(df, bins)
-
-# Probabilidade de mau (PD)
-df_woe["pd"] = model.predict_proba(
-    df_woe.drop("pago", axis=1)
-)[:, 1]
-
-# Score simples (0 a 1000)
-df_woe["score"] = (1 - df_woe["pd"]) * 1000
-
-# Criar 10 grupos (decis)
-df_woe["grupo_score"] = pd.qcut(
-    df_woe["score"],
-    q=10,
-    labels=False,
-    duplicates="drop"
-) + 1
-
-# Inverter para: 10 = melhor score
-df_woe["grupo_score"] = 11 - df_woe["grupo_score"]
-
-# Output final
-resultado = df.copy()
-resultado["pd"] = df_woe["pd"]
-resultado["score"] = df_woe["score"]
-resultado["grupo_score"] = df_woe["grupo_score"]
-
-print("\nOUTPUT FINAL COM SCORE E GRUPOS:")
-print(resultado.head())
-
-resultado.to_csv("dados_emprestimos_com_score.csv", index=False)
