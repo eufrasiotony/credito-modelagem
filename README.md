@@ -38,6 +38,7 @@ Gerar métricas para suporte à decisão de crédito
 │   └── credit_model.pkl
 │
 └── README.md
+```
 ---
 
 ## 📊 Base de Dados
