@@ -1,10 +1,10 @@
-📊 Projeto de Modelagem de Crédito
+# 📊 Projeto de Modelagem de Crédito
 
-📌 Visão Geral
+## 📌 Visão Geral
 
 Este projeto tem como objetivo desenvolver um modelo de crédito capaz de estimar a probabilidade de inadimplência de clientes, auxiliando na tomada de decisão para concessão de crédito. A solução utiliza técnicas de análise exploratória de dados, engenharia de atributos e modelos de machine learning. O projeto contou com a auxilio de dados fictícios 
 
-🎯 Objetivos
+## 🎯 Objetivos
 
 Analisar o perfil dos clientes
 
@@ -14,8 +14,9 @@ Construir e avaliar modelos preditivos
 
 Gerar métricas para suporte à decisão de crédito
 
+---
 
-🗂 Estrutura do Projeto
+## 🗂 Estrutura do Projeto
 
 ```text
 
@@ -39,8 +40,7 @@ Gerar métricas para suporte à decisão de crédito
 └── README.md
 ---
 
-
-📊 Base de Dados
+## 📊 Base de Dados
 
 A base de dados contém informações demográficas, financeiras e comportamentais dos clientes, como:
 
@@ -48,7 +48,9 @@ Idade, sexo, estado_civil, escolaridade, qtde_dependentes, renda_mensal, valor_e
 
 ⚠️ Observação: Os dados utilizados são fictícios ou anonimizados, respeitando a LGPD.
 
-🧪 Metodologia
+---
+
+## 🧪 Metodologia
 
 Análise Exploratória (EDA)
 
@@ -76,7 +78,7 @@ Precisão, Recall e F1-score
 
 Matriz de confusão
 
-📈 Resultados
+## 📈 Resultados
 
 O modelo final apresentou:
 
@@ -98,17 +100,8 @@ NumPy
 
 Scikit-learn
 
-🗂 Estrutura do Projeto
 
-```text
-
-├── base.geral.csv/                 # Bases históricas utilizadas
-├── historico.jogos/                # Scripts de coleta e tratamento de dados
-├── modelo-logistico-gols0+.py/     # Modelo estatístico para ter pelo menos 1 gol
-├── modelo-logistico-gols1+.py/     # Modelo estatístico para mais de 1 gol
-└── README.md
-
-👤 Autor
+## 👤 Autor
 
 Tony Eufrasio
 Cientista de Dados / Analista de Risco de Crédito
